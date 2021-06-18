@@ -1,0 +1,15 @@
+C:\Users\LUCAS\source\repos\SisArtsLOGIN\bin\Debug\SisArtsLOGIN.exe.config
+C:\Users\LUCAS\source\repos\SisArtsLOGIN\bin\Debug\SisArtsLOGIN.exe
+C:\Users\LUCAS\source\repos\SisArtsLOGIN\bin\Debug\SisArtsLOGIN.pdb
+C:\Users\LUCAS\source\repos\SisArtsLOGIN\obj\Debug\SisArtsLOGIN.csproj.AssemblyReference.cache
+C:\Users\LUCAS\source\repos\SisArtsLOGIN\obj\Debug\MainWindow.g.cs
+C:\Users\LUCAS\source\repos\SisArtsLOGIN\obj\Debug\App.g.cs
+C:\Users\LUCAS\source\repos\SisArtsLOGIN\obj\Debug\SisArtsLOGIN_MarkupCompile.cache
+C:\Users\LUCAS\source\repos\SisArtsLOGIN\obj\Debug\SisArtsLOGIN_MarkupCompile.lref
+C:\Users\LUCAS\source\repos\SisArtsLOGIN\obj\Debug\MainWindow.baml
+C:\Users\LUCAS\source\repos\SisArtsLOGIN\obj\Debug\SisArtsLOGIN.g.resources
+C:\Users\LUCAS\source\repos\SisArtsLOGIN\obj\Debug\SisArtsLOGIN.Properties.Resources.resources
+C:\Users\LUCAS\source\repos\SisArtsLOGIN\obj\Debug\SisArtsLOGIN.csproj.GenerateResource.cache
+C:\Users\LUCAS\source\repos\SisArtsLOGIN\obj\Debug\SisArtsLOGIN.csproj.CoreCompileInputs.cache
+C:\Users\LUCAS\source\repos\SisArtsLOGIN\obj\Debug\SisArtsLOGIN.exe
+C:\Users\LUCAS\source\repos\SisArtsLOGIN\obj\Debug\SisArtsLOGIN.pdb
