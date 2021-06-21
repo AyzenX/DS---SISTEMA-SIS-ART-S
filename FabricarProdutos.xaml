@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:projetoSISARTS"
         mc:Ignorable="d"
-        Title="Fabricação de Produtos" Height="450" Width="800"
+        Title="Fabricação de Produtos" Height="445" Width="685"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
         Background="GhostWhite">
@@ -18,7 +18,6 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="70"/>
-            <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -26,26 +25,48 @@
                    HorizontalAlignment="Center"
                    Margin="5,0,0,0"
                    Background="AliceBlue"
-                   FontWeight="Bold">Fabricar Produtos</TextBlock>
+                   FontWeight="Bold">Fabricação de Produtos</TextBlock>
 
         <StackPanel Grid.Row="1">
             <TextBlock Margin="10 0">Nome do produto</TextBlock>
             <TextBox x:Name="txNomeProduto" 
-                     Margin="10,0,0,0" 
+                     Margin="10,5,5,0" 
                      Padding="2"/>
         </StackPanel>
 
-        <StackPanel Grid.Row="1" Grid.Column="2" Margin="15 10 0 0" HorizontalAlignment="Left">
-            <Button Content="Adicionar" Height="25" Width="70" Margin="0 5"/>
-            <Button Content="Remover" Height="25" Width="70"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1" Margin="100,10,0,0" HorizontalAlignment="Left" Width="183">
+            <Button Content="Adicionar" Height="25" Width="70" Margin="10 -7 10 10" Click="Adicionar"/>
+            <Button Content="Remover" Height="25" Width="70" Margin="10 -7 10 10"/>
         </StackPanel>
 
-        <StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="2">
             <TextBlock Margin="10 0">Quantidade</TextBlock>
-            <TextBox x:Name="txQuantidade" 
-                     Margin="10,0,0,0" 
+            <TextBox x:Name="txQuantidade"
+                     Width="75"
+                     HorizontalAlignment="Left"
+                     Margin="10,5,0,0" 
                      Padding="2"/>
         </StackPanel>
+        <DataGrid x:Name="DataGridProdutos" Margin="104,10,100,27" Grid.Row="2" Grid.ColumnSpan="2">
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="AliceBlue"/>
+                    <Setter Property="FontWeight" Value="SemiBold"/>
+                    <Setter Property="BorderThickness" Value="0,0,1,1"/>
+                    <Setter Property="BorderBrush" Value="Black"/>
+
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <!-- Texto do Header da Coluna-->
+                <DataGridTextColumn Header="ID" Binding="{Binding produtoID}" Width="50"/>
+                <DataGridTextColumn Header="Linha de Produção" Binding="{Binding produtoLinhaDeProducao}" Width="*"/>
+                <DataGridTextColumn Header="QTD" Binding="{Binding produtoQTD}" Width="70"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Produzir" HorizontalAlignment="Left" Margin="394,139,0,0" Grid.Row="2" VerticalAlignment="Top" Width="66" Height="34" Grid.Column="1"/>
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="394,196,0,0" Grid.Row="2" VerticalAlignment="Top" Width="66" Height="34" Grid.Column="1"/>
 
     </Grid>
 </Window>

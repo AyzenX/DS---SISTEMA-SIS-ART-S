@@ -23,5 +23,31 @@ namespace projetoSISARTS
         {
             InitializeComponent();
         }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        public class Produtos
+        {
+            public String produtoID { get; set; }
+            public String produtoLinhaDeProducao { get; set; }
+            public String produtoQTD { get; set; }
+        }
+
+        private void Adicionar(object sender, RoutedEventArgs e)
+        {
+            String LinhaDeProducao = txNomeProduto.Text;
+            String ProdutoQTD = txQuantidade.Text;
+
+            Produtos produtos = new Produtos();
+
+            //Por hora não captura ID, pois deve o id atribuido do Cadastro de Produtos
+            produtos.produtoLinhaDeProducao = LinhaDeProducao;
+            produtos.produtoQTD = ProdutoQTD;
+
+            DataGridProdutos.Items.Add(produtos);
+        }
     }
 }
