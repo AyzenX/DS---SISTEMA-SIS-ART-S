@@ -10,10 +10,10 @@
         <Label Content="Login" HorizontalAlignment="Left" Margin="240,18,0,0" VerticalAlignment="Top" FontSize="36" />
         <Label Content="________________________" HorizontalAlignment="Left" Margin="194,30,0,0" VerticalAlignment="Top" FontSize="36"/>
         <Label Content="Usuário" HorizontalAlignment="Left" Margin="172,161,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
-        <Label Content="Senha" HorizontalAlignment="Left" Margin="172,255,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label Content="ha" HorizontalAlignment="Left" Margin="172,255,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
         <Button Content="Login" HorizontalAlignment="Left" Margin="228,370,0,0" VerticalAlignment="Top" Width="126" Height="49" Click="Button_Click" FontSize="24"/>
         <TextBox x:Name="txtSenha" HorizontalAlignment="Left" Height="46" Margin="172,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" FontSize="27" TextChanged="TextBox_TextChanged_1" IsUndoEnabled="True"/>
         <TextBox x:Name="txtUsuario" HorizontalAlignment="Left" Height="46" Margin="172,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" FontSize="27" TextChanged="TextBox_TextChanged"/>
-
+      
     </Grid>
 </Window>
