@@ -28,12 +28,12 @@ namespace projetoSISARTS
         {
             String Nome = txNome.Text;
             String DataNasc = txDataNasc.Text;
-            int CPF = Convert.ToInt32(txCPF.Text);
-            int RG = Convert.ToInt32(txRG.Text);
-            int Telefone = Convert.ToInt32(txTelefone.Text);
+            String CPF = txCPF.Text;
+            String RG = txRG.Text;
+            String Telefone = txTelefone.Text;
             String Rua = txRua.Text;
             String Bairro = txBairro.Text;
-            int Numero = Convert.ToInt32(txCPF.Text);
+            String Numero = txNumero.Text;
             String Complemento = txComplemento.Text;
 
             MessageBox.Show("Funcionário Cadastrado com sucesso!");

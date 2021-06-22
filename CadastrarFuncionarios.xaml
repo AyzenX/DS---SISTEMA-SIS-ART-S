@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wpfTool="clr-namespace:Xceed.Wpf.Toolkit;assembly=Xceed.Wpf.Toolkit"
         xmlns:local="clr-namespace:projetoSISARTS"
         mc:Ignorable="d"
         Title="Cadastro de Funcionários" Height="450" Width="800" 
@@ -32,13 +33,14 @@
             <Label Grid.Column="0" Content="Nome"/>
             <TextBox x:Name="txNome" Margin="0 0 15 0" Padding="2"/>
             <Label Grid.Column="0" Content="Data de Nascimento"/>
-            <TextBox x:Name="txDataNasc" Margin="0 0 15 0" Padding="2"/>
+            <DatePicker x:Name="txDataNasc" Margin="0 0 15 0" Padding="2"/>
             <Label Grid.Column="0" Content="CPF"/>
-            <TextBox x:Name="txCPF" Margin="0 0 15 0" Padding="2"/>
+            <wpfTool:MaskedTextBox Mask="000\.000\.000-00" x:Name="txCPF" Margin="0 0 15 0" Padding="2"/>
             <Label Grid.Column="0" Content="RG"/>
-            <TextBox x:Name="txRG" Margin="0 0 15 0" Padding="2"/>
+            <wpfTool:MaskedTextBox Mask="0\.000\.000" x:Name="txRG" Margin="0 0 15 0" Padding="2"/>
             <Label Grid.Column="0" Content="Telefone"/>
-            <TextBox x:Name="txTelefone" Margin="0 0 15 0" Padding="2"/>
+            <wpfTool:MaskedTextBox Mask="(00) 0 0000-0000" x:Name="txTelefone" Margin="0 0 15 0" Padding="2"/>
+
         </StackPanel>
 
         <StackPanel Grid.Row="1" Grid.Column="2"  Margin="0 50 0 0">
@@ -54,7 +56,7 @@
         </StackPanel>
 
         <StackPanel Grid.Row="1" Grid.Column="3">
-            <Button x:Name="btSalvar" Height="75" Width="75" Margin="0 50 0 20" Click="Salvar">Salvar</Button>
+            <Button x:Name="btSalvar" Height="75" Width="75" Margin="0 50 0 20" Click="Salvar" Content="Cadastrar"/>
             <Button x:Name="btEditar" Height="75" Width="75" Margin="0 0 0 20" Click="Editar">Editar</Button>
             <Button x:Name="btExcluir" Height="75" Width="75" Click="Excluir">Excluir</Button>
         </StackPanel>
