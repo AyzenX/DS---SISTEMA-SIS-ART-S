@@ -25,19 +25,20 @@ namespace projetoSISARTS
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
-        {
-
-        }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
 
+        private void passbox_password_GotKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if ((txtUsuario.Text == "afavsdirecao") && (txtSenha.Text == "admin"))
+            if ((txtUsuario.Text == "afavsdirecao") && (passbox_password.Password == "admin"))
             {
                 Menu mmenu = new Menu();
                 mmenu.Show();
