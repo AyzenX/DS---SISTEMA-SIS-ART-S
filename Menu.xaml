@@ -3,6 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Menu Principal" Height="500" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
-
+        <Button Content="Button" HorizontalAlignment="Left" Margin="272,80,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </Window>
