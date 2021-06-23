@@ -3,6 +3,11 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Menu Principal" Height="500" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="272,80,0,0" VerticalAlignment="Top" Width="75"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="527*"/>
+            <ColumnDefinition Width="265*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="cadFunc" Content="Cadastrar Funicionarios" HorizontalAlignment="Left" Margin="70,66,0,0" VerticalAlignment="Top" Width="129" Height="49" Click="cadFunc_Click"/>
+        <Button x:Name="fabProd" Content="Fabricar Produtos" HorizontalAlignment="Left" Margin="299,66,0,0" VerticalAlignment="Top" Width="132" Height="49" Click="fabProd_Click"/>
     </Grid>
 </Window>

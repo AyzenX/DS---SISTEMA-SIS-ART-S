@@ -24,8 +24,16 @@ namespace projetoSISARTS
             InitializeComponent();
         }
 
-        
+        private void cadFunc_Click(object sender, RoutedEventArgs e)
+        {
+            CadastrarFuncionarios cadFuncionarios = new CadastrarFuncionarios();
+            cadFuncionarios.Show();
+        }
 
-        
+        private void fabProd_Click(object sender, RoutedEventArgs e)
+        {
+            FabricarProdutos fabProdutos = new FabricarProdutos();
+            fabProdutos.Show();
+        }
     }
 }
