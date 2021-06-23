@@ -44,11 +44,16 @@ namespace projetoSISARTS
                 mmenu.Show();
                 this.Close();
             }
-
             else
             {
                 MessageBox.Show("Usuário ou Senha Incorretos !!");
             }
+
+            if ((txtUsuario.Text == "") &&(passbox_password.Password == ""))
+            {
+                MessageBox.Show("Os campos não podem ficar vazios !!!");
+            }
+            
         }
     }
 }
