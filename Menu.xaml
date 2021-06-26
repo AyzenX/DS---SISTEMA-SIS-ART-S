@@ -13,6 +13,8 @@
         <Button x:Name="vendProd" Content="Vender Produtos" HorizontalAlignment="Left" Margin="215,207,0,0" VerticalAlignment="Top" Width="124" Height="49"/>
         <Button x:Name="cadDesp" Content="Cadastrar Despesas" HorizontalAlignment="Left" Margin="32,357,0,0" VerticalAlignment="Top" Width="124" Height="49"/>
         <Button x:Name="cadForn" Content="Cadastrar Fornecedor" HorizontalAlignment="Left" Margin="32,276,0,0" VerticalAlignment="Top" Width="124" Height="49"/>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="522,144,0,0" VerticalAlignment="Top"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="548,236,0,0" VerticalAlignment="Top" Width="165"/>
     </Grid>
     
 </Window>
