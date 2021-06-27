@@ -35,5 +35,11 @@ namespace projetoSISARTS
             FabricarProdutos fabProdutos = new FabricarProdutos();
             fabProdutos.Show();
         }
+
+        private void pagDesp_Click(object sender, RoutedEventArgs e)
+        {
+            PagarDespesas pagDesp = new PagarDespesas();
+            pagDesp.Show();
+        }
     }
 }

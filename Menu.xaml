@@ -5,7 +5,7 @@
     <Grid>
         <Button x:Name="cadFunc" Content="Cadastrar Funicionarios" HorizontalAlignment="Left" Margin="32,207,0,0" VerticalAlignment="Top" Width="124" Height="49" Click="cadFunc_Click"/>
         <Button x:Name="fabProd" Content="Fabricar Produtos" HorizontalAlignment="Left" Margin="215,66,0,0" VerticalAlignment="Top" Width="124" Height="49" Click="fabProd_Click"/>
-        <Button x:Name="pagDesp" Content="Pagar Despesas" HorizontalAlignment="Left" Margin="215,357,0,0" VerticalAlignment="Top" Width="124" Height="49"/>
+        <Button x:Name="pagDesp" Content="Pagar Despesas" HorizontalAlignment="Left" Margin="215,357,0,0" VerticalAlignment="Top" Width="124" Height="49" Click="pagDesp_Click"/>
         <Button x:Name="cadProd" Content="Cadastrar Produtos" HorizontalAlignment="Left" Margin="32,135,0,0" VerticalAlignment="Top" Width="124" Height="49"/>
         <Button x:Name="conCai" Content="Controlar Caixa" HorizontalAlignment="Left" Margin="215,135,0,0" VerticalAlignment="Top" Width="124" Height="49"/>
         <Button x:Name="recVend" Content="Receber Vendas" HorizontalAlignment="Left" Margin="215,276,0,0" VerticalAlignment="Top" Width="124" Height="49"/>
