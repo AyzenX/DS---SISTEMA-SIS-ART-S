@@ -19,9 +19,36 @@ namespace projetoSISARTS
     /// </summary>
     public partial class PagarDespesas : Window
     {
+        public string[] despesasCadastradas { get; set; }
+
         public PagarDespesas()
         {
             InitializeComponent();
+
+            despesasCadastradas = new string[] { "Água", "Luz",};
+
+            DataContext = this;
+        }
+
+        private void btnPagar_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("O pagamento da despesa foi realizado com sucesso !!");
+            this.Close();
+            
+        }
+
+        private void btnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("Deseja cancelar o pagamento da despesa ??", "Cancelar Pagamento", MessageBoxButton.YesNo,MessageBoxImage.Question );
+
+            switch (result)
+            {
+                case MessageBoxResult.Yes:
+                    this.Close();
+                    break;
+            }
+            
+            
         }
     }
 }
