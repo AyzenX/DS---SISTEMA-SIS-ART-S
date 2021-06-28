@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:projetoSISARTS"
         mc:Ignorable="d"
-        Title="ReceberVenda" Height="337.362" Width="466.511">
+        Title="ReceberVenda" Height="337.362" Width="466.511" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         <Button x:Name="btnCancelarRV" Content="Cancelar" HorizontalAlignment="Left" Margin="60,236,0,0" VerticalAlignment="Top" Width="101" Height="46" Click="btnCancelar_Click"/>
         <Button x:Name="btnPagarRV" Content="Pagar" HorizontalAlignment="Left" Margin="297,236,0,0" VerticalAlignment="Top" Width="101" Height="46" Click="btnPagar_Click"/>
