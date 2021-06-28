@@ -23,5 +23,28 @@ namespace projetoSISARTS
         {
             InitializeComponent();
         }
+
+        private void btnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("Deseja cancelar o pagamento da despesa ??", "Cancelar Pagamento", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+            switch (result)
+            {
+                case MessageBoxResult.Yes:
+                    this.Close();
+                    break;
+            }
+        }
+
+        private void btnPagar_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("A Venda foi recebida com sucesso!!");
+            this.Close();
+        }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
