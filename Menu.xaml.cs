@@ -41,5 +41,11 @@ namespace projetoSISARTS
             PagarDespesas pagDesp = new PagarDespesas();
             pagDesp.Show();
         }
+
+        private void recVend_Click(object sender, RoutedEventArgs e)
+        {
+            ReceberVenda recVend = new ReceberVenda();
+            recVend.Show();
+        }
     }
 }
