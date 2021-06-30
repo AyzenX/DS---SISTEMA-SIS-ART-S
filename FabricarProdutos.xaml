@@ -36,7 +36,7 @@
 
         <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1" Margin="100,10,0,0" HorizontalAlignment="Left" Width="183">
             <Button Content="Adicionar" Height="25" Width="70" Margin="10 -7 10 10" Click="Adicionar"/>
-            <Button Content="Remover" Height="25" Width="70" Margin="10,9,10,26"/>
+            <Button Content="Remover" Height="25" Width="70" Margin="10,9,10,26" Click="Remover"/>
         </StackPanel>
 
 
@@ -65,8 +65,8 @@
                 <DataGridTextColumn Header="QTD" Binding="{Binding produtoQTD}" Width="70"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Produzir" HorizontalAlignment="Left" Margin="313,138,0,0" Grid.Row="2" VerticalAlignment="Top" Width="66" Height="34" Grid.Column="1"/>
-        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="313,195,0,0" Grid.Row="2" VerticalAlignment="Top" Width="66" Height="34" Grid.Column="1"/>
+        <Button Content="Produzir" HorizontalAlignment="Left" Margin="313,138,0,0" Grid.Row="2" VerticalAlignment="Top" Width="66" Height="34" Grid.Column="1" Click="Produzir"/>
+        <Button Content="Sair" HorizontalAlignment="Left" Margin="313,195,0,0" Grid.Row="2" VerticalAlignment="Top" Width="66" Height="34" Grid.Column="1" Click="Sair"/>
 
     </Grid>
 </Window>

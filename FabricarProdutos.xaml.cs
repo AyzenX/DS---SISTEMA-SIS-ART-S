@@ -49,5 +49,19 @@ namespace projetoSISARTS
 
             DataGridProdutos.Items.Add(produtos);
         }
+
+        private void Sair(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Produzir(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Produtos adicionados à linha de produção");
+        }
+
+        private void Remover(object sender, RoutedEventArgs e)
+        {
+        }
     }
 }
