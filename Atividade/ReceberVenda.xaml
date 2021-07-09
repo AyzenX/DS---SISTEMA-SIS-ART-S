@@ -1,0 +1,21 @@
+﻿<Window x:Class="projetoSISARTS.ReceberVenda"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:projetoSISARTS"
+        mc:Ignorable="d"
+        Title="ReceberVenda" Height="337.362" Width="466.511" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Button x:Name="btnCancelarRV" Content="Cancelar" HorizontalAlignment="Left" Margin="60,236,0,0" VerticalAlignment="Top" Width="101" Height="46" Click="btnCancelar_Click"/>
+        <Button x:Name="btnPagarRV" Content="Pagar" HorizontalAlignment="Left" Margin="297,236,0,0" VerticalAlignment="Top" Width="101" Height="46" Click="btnPagar_Click"/>
+        <CheckBox Content="Dinheiro&#xD;&#xA;" HorizontalAlignment="Left" Margin="297,150,0,0" VerticalAlignment="Top" Height="24" Width="77" FontSize="14"/>
+        <CheckBox Content="Cartão&#xD;&#xA;" HorizontalAlignment="Left" Margin="297,174,0,0" VerticalAlignment="Top" Height="24" Width="77" FontSize="14"/>
+        <Label Content="Formas de Pagamento"  HorizontalAlignment="Left" Margin="278,114,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="14" Width="149"/>
+        <Label Content="TOTAL DE VENDAS"  HorizontalAlignment="Left" Margin="123,0,0,0" VerticalAlignment="Top" Background="{x:Null}" Width="232" FontSize="24"/>
+        <Label Content="VALOR"  HorizontalAlignment="Left" Margin="244,57,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="28" Margin="308,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" Text="R$ 178,00" FontSize="16" IsEnabled="False"/>
+        <TextBlock HorizontalAlignment="Left" Margin="35,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="99" Width="166" FontSize="18"><Run Text="Laços R$ 23,00"/><LineBreak/><Run Text="Tiaras R$ 55,00"/><LineBreak/><Run Text="Kits Bebê R$ 100,00"/></TextBlock>
+
+    </Grid>
+</Window>
